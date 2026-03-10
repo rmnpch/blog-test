@@ -47,7 +47,7 @@ app.get("/post/create", async (req, res) => {
   res.render("create-post");
 });
 
-app.post("/post/create", async (req, res) => {
+app.post("/post", async (req, res) => {
   const { title, content, author, tags } = req.body;
   const authors = await Author.find({});
   const authorId = authors[author]._id;

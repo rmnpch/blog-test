@@ -52,12 +52,13 @@ a:hover {
 
 input[type="text"],
 input[type="email"],
-textarea {
+textarea, select {
   display: block;
   width: 100%;
   padding: 0.5rem;
   margin: 0.5rem auto;
   border-radius: 0.25rem;
+  font-family: inherit;
 }
 
 input[type="submit"] {
@@ -67,6 +68,8 @@ input[type="submit"] {
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   cursor: pointer;
+  font-family: inherit;
+
 }
 
 .error {
